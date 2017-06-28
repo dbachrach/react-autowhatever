@@ -143,6 +143,7 @@ export default class Autowhatever extends Component {
 
   onHighlightedItemChange = highlightedItem => {
     this.highlightedItem = highlightedItem;
+    this.ensureHighlightedItemIsVisible();
   };
 
   getItemId = (sectionIndex, itemIndex) => {
